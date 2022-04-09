@@ -1,0 +1,155 @@
+body {
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Inter', sans-serif;
+    color: #4A4E74;
+}
+
+p{
+    margin: 0;
+    padding: 0;
+}
+
+.pale {
+    color: #8E9AAF;
+}
+
+.row {
+    margin-bottom: 23px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.container {
+    width: 550px;
+    height: 719px;
+    background: #f3f2f2;
+}
+
+.info {
+    box-sizing: border-box;
+    height: 190px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #fe8a5d;
+    gap: 9px;
+    color: #414566;
+}
+
+.info_par:first-child{
+    font-size: 40px;
+    font-weight: 800;
+    line-height: 40px;
+    letter-spacing: -0.02em;
+}
+
+.info_par:last-child{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px;
+}
+
+.service-options {
+    box-sizing: border-box;
+    margin-top: 37px;
+    padding: 0 39px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.service-options_button {
+    width: 143px;
+    height: 45px;
+    background: #4A4E74;
+    color: #fff;
+    border: none;
+    border-radius: 7px;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 16px;
+}
+
+.service-choice-header{
+    margin: 47px 39px 16px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.service-choice_text{
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 20px;
+}
+
+.service-choice {
+    margin: 0 39px;
+    min-height: 60px;
+    border-bottom: 1px solid #4A4E74;
+    /*display: flex;*/
+}
+
+.service-name {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 20px;
+}
+
+.service-price{
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 20px;
+}
+
+.outcome {
+    box-sizing: border-box;
+    padding: 0 39px;
+    height: 225px;
+}
+
+.outcome-text {
+    margin-top: 11px;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 32px;
+}
+
+.outcome-note {
+    margin-top: 11px;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 15px;
+}
+
+.outcome-sum {
+    margin-top: 11px;
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 32px;
+}
+
+.outcome_button {
+    margin-top: 50px;
+    width: 473px;
+    height: 44px;
+    border: none;
+    border-radius: 7px;
+    background: #8da0cb;
+    color: #fff;
+}
+
+.outcome_button img {
+    width: 16px;
+    height: 12px;
+}

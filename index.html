@@ -4,9 +4,45 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Invoice creator</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap" rel="stylesheet">
 </head>
 <body>
-    
+    <div class="container">
+        <div class="info">
+            <p class="info_par bold">INVOICE CREATOR</p>
+            <p class="info_par">Thanks for choosing GoodCorp, LLC!</p>
+        </div>
+        <div class="service-options">
+                <button id="wash-car-btn" class="service-options_button" type="button">Wash Car: $10</button>
+                <button id="mow-lawn-btn" class="service-options_button" type="button">Mow Lawn: $20</button>
+                <button id="pull-weeds-btn" class="service-options_button" type="button">Pull Weeds: $30</button>
+        </div>
+        <div class="service-choice-header">
+            <p class="service-choice_text pale">TASK</p>
+            <p class="service-choice_text pale">TOTAL</p>
+        </div>
+        <div id="service-choice" class="service-choice">
+            
+        </div>
+        <div class="outcome">
+            <div class="row">
+                <p class="outcome-text pale">NOTES</p>
+                <p class="outcome-text pale">TOTAL AMOUNT</p>
+            </div>
+            <div class="row">
+                <p class="outcome-note">We accept cash, credit card, or PayPal</p>
+                <p id="sum" class="outcome-sum">$0</p>
+            </div>
+            <button id="outcome-btn" class="outcome_button" type="button">
+                <img src="env-icon.png">
+                Send invoice
+            </button>
+        </div>
+    </div>
+    <script src="index.js"></script>
 </body>
 </html>
