@@ -1,5 +1,5 @@
-let renderList = [];
-let chosenService = document.getElementById("service-choice");
+let renderList = [];//check wether all variable types used correctly
+const chosenService = document.getElementById("service-choice");
 const washCarBtn = document.getElementById("wash-car-btn");
 const mowLawnBtn = document.getElementById("mow-lawn-btn");
 const pullWeedsBtn = document.getElementById("pull-weeds-btn");
@@ -18,28 +18,20 @@ const services = [
         price: 30
     }];
 
-
-washCarBtn.addEventListener("click", function() {//replace anonimus function with pre-written function 
-    //that user services [i] as a parameter
-    if(!renderList.find(el => el === services[0])) {
-        renderList.push(services[0]);
-    }
+washCarBtn.addEventListener("click", function() {
+    update(services[0]);
 })
 
 mowLawnBtn.addEventListener("click", function() {
-    if(!renderList.find(el => el === services[1])){
-        renderList.push(services[1]);
-    }
+    update(services[1]);
 })
 
 pullWeedsBtn.addEventListener("click", function() {
-    if(!renderList.find(el => el === services[2])) {
-        renderList.push(services[2]);
-    }
+    update(services[2]);
 })
 
 outcomeBtn.addEventListener("click", function() {
-    render(renderList);
+    
 })
 
 function render (list) { 
@@ -58,6 +50,22 @@ function render (list) {
             chosenService.insertAdjacentHTML('beforeend', services);//check this out on mdn
          })
 }
+
+function updateTotalAmount() {
+    let totalAmount = 0;
+    const totalAmountDIv = document.getElementById("outcome-sum");
+    renderList.forEach(service => totalAmount += service.price);
+    totalAmountDIv.innerHTML = `$ ${totalAmount}`;
+}
+
+function update(service) {
+    if(!renderList.find(el => el === service)) {
+        renderList.push(service);
+    }
+    render(renderList);
+    updateTotalAmount();
+}
+
 
 
 
