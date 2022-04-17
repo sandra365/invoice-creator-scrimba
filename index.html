@@ -12,21 +12,21 @@
 </head>
 <body>
     <div class="container">
-        <div class="info">
-            <p class="info_par bold">INVOICE CREATOR</p>
-            <p class="info_par">Thanks for choosing GoodCorp, LLC!</p>
+        <div class="header">
+            <p class="title">INVOICE CREATOR</p>
+            <p class="message">Thanks for choosing GoodCorp, LLC!</p>
         </div>
         <div class="service-options">
-                <button id="wash-car-btn" class="service-options_button" type="button">Wash Car: $10</button>
-                <button id="mow-lawn-btn" class="service-options_button" type="button">Mow Lawn: $20</button>
-                <button id="pull-weeds-btn" class="service-options_button" type="button">Pull Weeds: $30</button>
+                <button id="wash-car-btn" class="button service-options_button" type="button">Wash Car: $10</button>
+                <button id="mow-lawn-btn" class="button service-options_button" type="button">Mow Lawn: $20</button>
+                <button id="pull-weeds-btn" class="button service-options_button" type="button">Pull Weeds: $30</button>
         </div>
-        <div class="service-choice-header">
-            <p class="service-choice_text pale">TASK</p>
-            <p class="service-choice_text pale">TOTAL</p>
+        <div class="selected-service-container">
+            <p class="selected-service-container-text pale">TASK</p>
+            <p class="selected-service-container-text pale">TOTAL</p>
         </div>
-        <div id="service-choice" class="service-choice">
-            
+        <div id="selected-service-list" class="selected-service-list">
+  
         </div>
         <div class="outcome">
             <div class="row">
@@ -35,10 +35,10 @@
             </div>
             <div class="row">
                 <p class="outcome-note">We accept cash, credit card, or PayPal</p>
-                <p id="outcome-sum" class="outcome-sum">$0</p>
+                <p id="total-amount" class="total-amount">$0</p>
             </div>
-            <button id="outcome-btn" class="outcome_button" type="button">
-                <img src="env-icon.png">
+            <button id="outcome-btn" class="button outcome_button" type="button">
+                <img class="outcome-btn_img" src="env-icon.png">
                 Send invoice
             </button>
         </div>

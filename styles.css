@@ -9,7 +9,7 @@ body {
     color: #4A4E74;
 }
 
-p{
+p {
     margin: 0;
     padding: 0;
 }
@@ -19,42 +19,60 @@ p{
 }
 
 .row {
-    margin-bottom: 23px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
 
-.bold {
-    font-weight: bold;
+.selected-service-list .row {
+    margin-bottom: 23px;
+}
+
+.button {
+    border: none;
+    border-radius: 7px;
+    background: #8da0cb;
+    color: #fff;
+}
+
+.button:hover {
+    cursor: pointer;
+    background: #5c6190;
+}
+
+.remove {
+    padding-left: 10px;
+    cursor: pointer;
+    font-size: 12px;
+    font-weight: 400;
 }
 
 .container {
     width: 550px;
     height: 719px;
-    background: #f3f2f2;
+    background: #f9f7f7;
 }
 
-.info {
+.header {
     box-sizing: border-box;
     height: 190px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: #fe8a5d;
+    background: #c9e4ca;
     gap: 9px;
     color: #414566;
 }
 
-.info_par:first-child{
+.title {
     font-size: 40px;
-    font-weight: 800;
+    font-weight: bold;
     line-height: 40px;
     letter-spacing: -0.02em;
 }
 
-.info_par:last-child{
+.message {
     font-size: 16px;
     font-weight: 400;
     line-height: 28px;
@@ -71,33 +89,28 @@ p{
 .service-options_button {
     width: 143px;
     height: 45px;
-    background: #4A4E74;
-    color: #fff;
-    border: none;
-    border-radius: 7px;
     font-size: 14px;
     font-weight: 500;
     line-height: 16px;
 }
 
-.service-choice-header{
+.selected-service-container{
     margin: 47px 39px 16px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
 
-.service-choice_text{
+.selected-service-container-text{
     font-size: 12px;
     font-weight: 700;
     line-height: 20px;
 }
 
-.service-choice {
+.selected-service-list {
     margin: 0 39px;
     min-height: 60px;
     border-bottom: 1px solid #4A4E74;
-    /*display: flex;*/
 }
 
 .service-name {
@@ -132,7 +145,7 @@ p{
     line-height: 15px;
 }
 
-.outcome-sum {
+.total-amount {
     margin-top: 11px;
     font-size: 36px;
     font-weight: 600;
@@ -143,13 +156,15 @@ p{
     margin-top: 50px;
     width: 473px;
     height: 44px;
-    border: none;
-    border-radius: 7px;
-    background: #8da0cb;
-    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
 }
 
-.outcome_button img {
+
+.outcome-btn_img {
+    padding-right: 10px;
     width: 16px;
     height: 12px;
 }
